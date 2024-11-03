@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <button onclick="darkMode()">Toggle dark mode</button> 
+    
+    <div class='container'>
+       <div id="message">Welcome to my site. <button onclick="document.getElementById('message').classList.add('dismissed')">Dismiss</button></div>
+
     <title>Ancient Inspired Self-Care</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,5 +45,13 @@
     <footer>
         <p>&copy; 2024 Ancient Inspired Self-Care</p>
     </footer>
+
+    <script>
+        function darkMode() 
+        {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
 </body>
 </html>
