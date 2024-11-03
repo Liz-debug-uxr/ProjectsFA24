@@ -1,77 +1,87 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode Styles */
 body.dark-mode {
-    background: #010101;
-    color: #ffffff;
-  }
-  
-  body.dark-mode button {
-    background-color: #ffffff;
-  }
-  
-  #message {
-    background: #E9FFE4;
-    border: 1px solid #178201;
-    padding: 20px 40px;
-    margin: 12px 0;
-    border-radius: 4px;
-    opacity: 1;
-    transition: opacity .2s ease;
-  }
-  
-  #message.dismissed {
-    opacity: 0;
-    height: 0;
-  }
-  
-  #message button {
-    float: right;
-  }
+  background: #010101;
+  color: #ffffff;
+}
 
+body.dark-mode button {
+  background-color: #ffffff;
+  color: #000; /* Add color to button text for contrast */
+}
 
+/* Welcome Message */
+#message {
+  background: #E9FFE4;
+  border: 1px solid #178201;
+  padding: 20px 40px;
+  margin: 12px 0;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity .2s ease;
+}
+
+#message.dismissed {
+  opacity: 0;
+  height: 0;
+}
+
+#message button {
+  float: right;
+}
+
+/* Main Body Styles */
 body {
-    font-family: 'Times New Roman', serif;
-    background-color: #f3f2e9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Times New Roman', serif;
+  background-color: #f3f2e9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    text-align: center;
-    background-color: #d4a373;
-    padding: 20px;
+  text-align: center;
+  background-color: #d4a373;
+  padding: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
 section img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #333;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #333;
 }
 
 footer {
-    text-align: center;
-    background-color: #d4a373;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  background-color: #d4a373;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
     <title>Ancient Inspired Self-Care</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,10 +10,9 @@
 
     <button onclick="darkMode()">Toggle dark mode</button> 
     
-    <div class='container'>
+    <div class="container">
        <div id="message">Welcome to my site. <button onclick="document.getElementById('message').classList.add('dismissed')">Dismiss</button></div>
 
-       
     <header>
         <h1>Ancient Self-Care</h1>
         <nav>
@@ -50,9 +47,9 @@
     </footer>
 
     <script>
-        function darkMode() 
-        {
+        function darkMode() {
             document.body.classList.toggle('dark-mode');
+            console.log('Dark mode toggled'); // Debugging line
         }
     </script>
 
